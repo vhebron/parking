@@ -5,64 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sistema de verificació de matrícules - Vall d'Hebron</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      background: #fff;
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      width: 100%;
     }
-    header img {
+    body {
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
       width: 220px;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin: 35px auto 0 auto;
+      display: block;
     }
-    h1 {
-      color: #245cff;
-      font-size: 2.8em;
+    .main-title {
+      color: #2467ea;
+      font-size: 2.45vw;
       font-weight: bold;
-      margin: 25px 0 20px 0;
+      margin: 15px 0 30px 0;
+      line-height: 1.1;
+      letter-spacing: 1px;
     }
     .autorizadas {
       color: #000;
-      font-size: 2.3em;
+      font-size: 2.17vw;
       font-weight: bold;
-      margin-bottom: 30px;
+      margin: 0 0 25px 0;
+      line-height: 1.1;
     }
     .label {
-      color: #245cff;
-      font-size: 2.5em;
-      margin-bottom: 5px;
+      color: #2467ea;
+      font-size: 2vw;
+      margin-bottom: 0;
+      line-height: 1.1;
+      font-weight: normal;
+      margin-top: 10px;
     }
     .matricula {
       color: #000;
-      font-size: 2.8em;
-      font-weight: normal; /* No negrita */
-      margin: 0 0 50px 0;
-      letter-spacing: 1px;
+      font-size: 2.2vw;
+      font-weight: normal;
+      margin: 5px 0 0 0;
+      line-height: 1.1;
     }
-    footer {
+    .footer {
+      width: 100%;
       text-align: left;
-      margin: 80px 0 0 30px;
-      font-size: 1.1em;
+      margin-left: 2vw;
+      position: absolute;
+      left: 0;
+      bottom: 3vw;
+      font-size: 1.05vw;
       color: #000;
     }
-    footer a {
-      color: #245cff;
+    .footer a {
+      color: #2467ea;
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://nlsomvh.vallhebron.com/wp-content/uploads/2019/11/logo_VH_Master_RGB_blue.png" alt="Vall d'Hebron"/>
-  </header>
-  <h1>Sistema de verificació de matrícules Vall d'Hebron Barcelona Hospital Campus</h1>
+  <img class="logo" src="https://nlsomvh.vallhebron.com/wp-content/uploads/2019/11/logo_VH_Master_RGB_blue.png" alt="Vall d'Hebron"/>
+  <div class="main-title">Sistema de verificació de matrícules Vall d'Hebron Barcelona Hospital Campus</div>
   <div class="autorizadas">Les dades autoritzades són:</div>
   <div class="label">Matrícula del vehicle</div>
   <div class="matricula">6759LTN</div>
-  <footer>
-    Sistema generat i verificat per <a href="https://www.vallhebron.com/" target="_blank" rel="noopener">Vall d'Hebron Barcelona Hospital Campus</a>.
-  </footer>
+  <div class="footer">
+    Sistema generat i verificat per
+    <a href="https://www.vallhebron.com/" target="_blank" rel="noopener">Vall d'Hebron Barcelona Hospital Campus</a>.
+  </div>
 </body>
 </html>
